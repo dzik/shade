@@ -8,7 +8,7 @@ NEED_PALUDIS="0.26_alpha13"
 
 inherit paludis-hooks
 
-SRC_URI="http://prophet.ath.cx:8080/~shade/packages/paludis-hooks-q-reinitialize-${P_V}.tar.bz2"
+SRC_URI="http://prophet.ath.cx:8080/~shade/packages/paludis-hooks-q-reinitialize-1.0.tar.bz2"
 
 
 DESCRIPTION="q-reinitialize hook for use with patched portage utils"
