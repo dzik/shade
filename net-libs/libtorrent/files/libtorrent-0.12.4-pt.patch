@@ -1,0 +1,8 @@
+--- libtorrent/configure    (revision 1060)
++++ libtorrent/configure    (working copy)
+@@ -2095,1 +2095,1 @@
+-#define PEER_NAME "-lt0C40-"
++#define PEER_NAME "-lt0C30-"
+@@ -2100,1 +2100,1 @@
+-#define PEER_VERSION "lt\x0C\x40"
++#define PEER_VERSION "lt\x0C\x30"

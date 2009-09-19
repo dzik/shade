@@ -1,0 +1,8 @@
+# ChangeLog for sys-apps/module-rebuild
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+2007-03-19 0.5 - use flag "paludis" now determines wether the original 
+                 or the patched version is installed
+2007-03-13 20070313 - script doesn't use which any more, but  type -P
+2007-03-09 20070309 -initial import

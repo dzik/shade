@@ -1,0 +1,5 @@
+--- rtorrent/configure
++++ rtorrent/configure (working copy)
+@@ -22706,1 +22706,1 @@
+-#define USER_AGENT std::string(PACKAGE "/" VERSION "/") + torrent::version()
++#define USER_AGENT "rtorrent/0.8.3/0.12.3"
