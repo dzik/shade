@@ -9,7 +9,7 @@ inherit eutils flag-o-matic multilib
 
 MPLAYER_REVISION=29285
 
-IUSE="3dnow 3dnowext +a52 +aac aalib +alsa altivec arts +ass
+IUSE="3dnow 3dnowext +a52 +aac aalib +alsa altivec amrnb arts +ass
 bidi bindist bl +cddb +cdio cdparanoia -cpudetection -custom-cflags
 -custom-cpuopts debug dga +dirac directfb doc +dts +dv dvb +dvd +dvdnav dxr3
 +enca +encode esd +faac +faad fbcon ftp gif ggi -gtk +iconv ipv6 jack
