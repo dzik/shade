@@ -1,0 +1,7 @@
+# ChangeLog for app-paludis/paludis-hooks-sync-disks
+# Distributed under the GPL v2
+# $Header: $
+
+2008-03-18 .bash --> .hook - creidiki
+2008-02-20 small update - creidiki
+2007-02-23 Initial entry - version 1.0

@@ -1,0 +1,24 @@
+--- MainWindow.ui	2009-03-21 11:23:02.000000000 +0100
++++ MainWindow.ui	2009-03-27 18:42:12.000000000 +0100
+@@ -56,6 +56,12 @@
+               <verstretch>21</verstretch>
+              </sizepolicy>
+             </property>
++            <property name="minimumSize" >
++             <size>
++              <width>140</width>
++              <height>0</height>
++             </size>
++            </property>
+             <property name="focusPolicy" >
+              <enum>Qt::NoFocus</enum>
+             </property>
+@@ -99,7 +105,7 @@
+             </property>
+             <property name="minimumSize" >
+              <size>
+-              <width>60</width>
++              <width>140</width>
+               <height>0</height>
+              </size>
+             </property>

@@ -1,0 +1,9 @@
+# ChangeLog for app-paludis/paludis-wrapper
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+2007-12-18 /sbin/functions.sh --> /etc/init.d/functions.sh
+2007-12-15 ~x86-fbsd keyworded
+2007-06-29 ebuild cleanup
+2007-03-25 ver: 0.1.0-r2 : bugfix -  _paludis_wrapper is installed executable
+2007-02-23 Initial entry - version 0.1.0

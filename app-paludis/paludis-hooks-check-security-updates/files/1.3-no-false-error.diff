@@ -1,0 +1,19 @@
+diff --git a/check-security-updates.hook b/check-security-updates.hook
+index d571404..30da3a0 100755
+--- a/check-security-updates.hook
++++ b/check-security-updates.hook
+@@ -20,6 +20,7 @@ hook_run_sync_all_post()
+ {
+     ${PALUDIS_COMMAND} --report
+     echo
++    return 0
+ }
+ 
+ hook_depend_sync_all_post()
+@@ -30,4 +31,4 @@ hook_depend_sync_all_post()
+ hook_after_sync_all_post()
+ {
+     echo generate-metadata update-eix q-reinitialize
+-}
+\ No newline at end of file
++}

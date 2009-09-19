@@ -1,0 +1,15 @@
+# ChangeLog for app-paludis/paludis-hooks-ask
+# Copyright GPL v2
+# $Header: $
+
+2007-12-15 ~x86-fbsd keyworded
+2007-08-24 ver 2.3-r1 : added symlink to fetch_all_pre (left it out in 2.3 ebuild)
+2007-08-?? ver 2.3 : fixed the pause when reinstalling paludis in combination with other packages
+		     like when updating world or reinstalling it ...
+2007-06-29 ebuild cleanup
+2007-06-17 ver 2.2.1-r1 : added symlink to fetch_all_pre 
+2007-04-02 ver 2.2_pre1 : fixed for paludis-0.22.2
+2007-02-23 Initial entry - starting with version 1.5.2
+2007-02-28 ver 2.0 : paludis_wrapper has been taken out. It has its own ebuild now.
+2007-03-07 ver 2.1 : repaired a bug that was leaving 0 files in the current folder   
+                     and made the question more sensible.

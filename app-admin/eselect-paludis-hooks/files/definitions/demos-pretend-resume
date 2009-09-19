@@ -1,0 +1,3 @@
+# file: eselect/demos-pretend-resume.bash
+# eselect definition file for demos/elog.bash hook
+demos/pretend_resume.bash install_pretend_post
