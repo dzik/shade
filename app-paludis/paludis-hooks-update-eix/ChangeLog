@@ -2,6 +2,7 @@
 # Distributed under the GPL v2
 # $Header: $
 
+2009-09-19 Bump to 3.0 with support for eix 0.17 and 
 2008-03-18 support for metadata:path cache method - currently only eix-trunk -- see conf file (creidiki)
 2008-02-20 new version by creidiki,  .bash is .hook now
 2007-12-15 ~x86-fbsd keyworded
