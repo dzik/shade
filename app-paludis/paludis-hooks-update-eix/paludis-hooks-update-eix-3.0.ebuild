@@ -18,7 +18,6 @@ RDEPEND="${DEPEND}"
 
 
 src_install() {
-        epatch "${FILESDIR}/${P}-fix-name.patch"
 
         dodir /etc/paludis/hooks/config
         insinto /etc/paludis/hooks/config || die "update-eix.conf: insinto failed"
