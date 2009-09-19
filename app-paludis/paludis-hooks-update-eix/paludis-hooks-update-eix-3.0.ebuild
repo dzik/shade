@@ -5,7 +5,7 @@
 NEED_PALUDIS="0.26_alpha13"
 
 inherit eutils paludis-hooks
-SRC_URI="http://prophet.ath.cx:8080/~shade/packages/paludis-hooks-update-eix-${MY_PV}.tar.bz2"
+SRC_URI="http://prophet.ath.cx:8080/~shade/packages/paludis-hooks-update-eix-${P_V}.tar.bz2"
 
 
 DESCRIPTION="Hook update-eix makes eix work with Paludis."
