@@ -4,7 +4,7 @@
 
 inherit base eutils toolchain-funcs flag-o-matic
 
-DESCRIPTION="BitTorrent Client using libtorrent"
+DESCRIPTION="BitTorrent Client using libtorrent with version patch to 0.8.3"
 HOMEPAGE="http://libtorrent.rakshasa.no/"
 SRC_URI="http://libtorrent.rakshasa.no/downloads/${P}.tar.gz"
 
