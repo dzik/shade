@@ -1,17 +1,16 @@
 # Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/amarok-utils/amarok-utils-2.1.1.ebuild,v 1.1 2009/06/26 11:05:41 tampakrap Exp $
+# $Header: $
 
 EAPI="2"
 
-KMNAME="extragear/multimedia"
-KMMODULE="amarok"
-KDE_REQUIRED="never"
-inherit kde4-base
+inherit base cmake-utils
+
+MY_PN="amarok"
 
 DESCRIPTION="Various utility programs for Amarok."
 HOMEPAGE="http://amarok.kde.org/"
-SRC_URI="mirror://kde/stable/${PN/-utils/}/${PV}/src/${P/-utils/}.tar.bz2"
+SRC_URI="mirror://kde/unstable/${MY_PN}/${PV}/src/${MY_PN}-${PV}.tar.bz2"
 
 LICENSE="GPL-2"
 KEYWORDS="~amd64 ~x86"
@@ -19,18 +18,23 @@ SLOT="4"
 IUSE="debug"
 
 DEPEND="
-	!<media-sound/amarok-${PV}
 	>=media-libs/taglib-1.5
 	>=media-libs/taglib-extras-0.1
 	>=x11-libs/qt-core-4.4:4
 	>=x11-libs/qt-dbus-4.4:4
 "
 RDEPEND="${DEPEND}
-	!<media-sound/amarok-2.0.90:2
-	!<media-sound/amarok-2.0.90:${SLOT}
+	!<media-sound/amarok-2.1.80:2
+	!<media-sound/amarok-2.1.80:${SLOT}
 "
 
-S="${WORKDIR}/${P/-utils/}"
+S="${WORKDIR}/${MY_PN}-${PV}"
+
+PATCHES=(
+	"${FILESDIR}/${PN}-add-kdemacros.h.patch"
+)
+
+DOCS="TODO README ChangeLog AUTHORS"
 
 src_prepare() {
 	# Disable po processing
@@ -41,7 +45,7 @@ src_prepare() {
 		-i "${S}/CMakeLists.txt" \
 		|| die "Removing include of MacroOptionalAddSubdirectory failed."
 
-	kde4-base_src_prepare
+	base_src_prepare
 }
 
 src_configure() {
@@ -49,5 +53,5 @@ src_configure() {
 		-DWITH_PLAYER=OFF
 		-DWITH_UTILITIES=ON"
 
-	kde4-base_src_configure
+	cmake-utils_src_configure
 }
