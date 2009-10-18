@@ -4,13 +4,12 @@
 
 EAPI="2"
 
-KMNAME="playground/base/plasma/applets"
-KMMODULE="networkmanager"
-inherit kde4-base
+inherit kde4-base subversion
+
+ESVN_REPO_URI="svn://anonsvn.kde.org/home/kde/trunk/playground/base/plasma/applets/networkmanager@1034271"
 
 DESCRIPTION="A NetworkManager applet for kde"
 HOMEPAGE="http://kde.org/"
-ESVN_REVISION="978079"
 
 LICENSE="GPL-2 LGPL-2"
 KEYWORDS=""
