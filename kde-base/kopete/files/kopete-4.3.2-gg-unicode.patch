@@ -1,0 +1,15 @@
+--- kdenetwork-4.3.1/kopete/protocols/gadu/gadusession.cpp    2008-12-10
+17:14:05.000000000 +0100
++++ kopete-4.2.4/kopete/protocols/gadu/gadusession.cpp    2009-11-01
+13:18:00.000000000 +0100
+@@ -550,9 +550,9 @@
+     QString ul;
+     switch( event->event.userlist.type ) {
+         case GG_USERLIST_GET_REPLY:
+             if ( event->event.userlist.reply ) {
+-                ul = event->event.userlist.reply;
++                ul = textcodec->toUnicode(event->event.userlist.reply);
+                 kDebug( 14100 ) << "Got Contacts list  OK ";
+             }
+             else {
+                 kDebug( 14100 ) << "Got Contacts list  FAILED/EMPTY ";

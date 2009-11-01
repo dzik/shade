@@ -1,0 +1,48 @@
+--- kdenetwork-4.3.1/kopete/protocols/gadu/gaducontactlist.cpp	2008-09-03 13:25:06.000000000 +0200
++++ kopete-4.2.4/kopete/protocols/gadu/gaducontactlist.cpp	2009-11-01 13:19:00.000000000 +0100
+@@ -57,14 +57,21 @@
+ 		QString cline = (*lni);
+ 		if ( cline.isNull() ) {
+ 			break;
+ 		}
+-
++                kDebug( 14100 ) << "Reading line: \"" << cline << '"';
+ 		strList  = cline.split( QChar( ';' ), QString::KeepEmptyParts );
+ 
++                if ( strList[0] == QString("GG70ExportString,"))
++                {
++                        kDebug( 14100 ) << "Gadu spacial line, ignoring.:";
++                        ++lni;
++                        continue;
++                }
+ 		if ( strList.size() < 7 ) {
+ 			kDebug( 14100 ) << "Malformed entry, too short! Ignoring entry: " << strList;
+-			break;
++			++lni;
++                        continue;
+ 		}
+ 
+ 		stringIterator = strList.begin();
+ 		
+@@ -119,9 +126,9 @@
+ 		}
+ 
+ 		++lni;
+ 
+-		if ( cl.uin.isNull() ) {
++		if ( cl.uin.isNull() || cl.uin == 0) {
+ 			continue;
+ 		}
+ 
+ 		cList.append( cl );
+@@ -192,9 +199,9 @@
+ 				";;0;0;;" +
+ 				((*it).offlineTo == true ? '1' : '0')
+ 				+ ';' +
+ 				(*it).landline +
+-				";\r\n";
++				"\r\n";
+ 		}
+ 	}
+ 	return contacts;
+ }
