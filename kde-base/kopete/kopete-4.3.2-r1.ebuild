@@ -97,8 +97,8 @@ PDEPEND="
 "
 
 src_configure() {
-        epatch "${FILESDIR}/${P}-contantactlist.patch"
-        epatch "${FILESDIR}/${P}-unicode.patch"
+        epatch "${FILESDIR}/${P}-gg-contantactlist.patch"
+        epatch "${FILESDIR}/${P}-gg-unicode.patch"
 
 	local x x2
 	# Disable old msn support.
