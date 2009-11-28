@@ -6,8 +6,10 @@ app-paludis
 app-portage
 eclass
 kde-misc
+media-libs
 media-sound
 media-video
+net-im
 net-libs
 net-p2p
 net-wireless

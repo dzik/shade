@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layman>
+	<overlay 
+		contact="shade.poczta@gmail.com"
+		name="shade" 
+		src="git://github.com/dzik/shade.git"
+		status="unofficial" 
+		type="git">
+		<link>
+			http://github.com/dzik/shade
+		</link>
+		<description>
+			shade's git repo for local use
+		</description>
+	</overlay>
+</layman>
