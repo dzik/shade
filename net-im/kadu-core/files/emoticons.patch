@@ -7,7 +7,7 @@
 -	setPixmap(QPixmap(StaticPath));
 +	QPixmap p(StaticPath);
 +	setPixmap(p);
-+	setIconSize(QSize(18, 18));
++	setIconSize(QSize(25, 25));
  	setAutoRaise(true);
  	setMouseTracking(true);
  	setToolTip(emoticon_string);
@@ -15,7 +15,7 @@
  	if (Movie == NULL)
  	{
  		Movie = new QMovie(AnimPath);
-+		Movie->setScaledSize(QSize(18,18));
++		Movie->setScaledSize(QSize(25,25));
  		Movie->start();
  		connect(Movie, SIGNAL(updated(const QRect &)), this, SLOT(movieUpdate()));
  	}
