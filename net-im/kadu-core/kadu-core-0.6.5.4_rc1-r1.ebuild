@@ -32,6 +32,7 @@ PATCHES=(
 
 
 src_prepare() {
+	base_src_prepare
 	# Disable everything besides the core
 	kadu-disable_all
 
