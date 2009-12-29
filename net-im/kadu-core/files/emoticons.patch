@@ -1,0 +1,21 @@
+Index: kadu-core/emoticons.cpp
+===================================================================
+--- kadu-core/emoticons.cpp     (revision 7214)
++++ kadu-core/emoticons.cpp     (working copy)
+@@ -357,7 +357,7 @@ EmoticonSelectorButton::EmoticonSelector
+{
+        QPixmap p(StaticPath);
+        setPixmap(p);
+-       setIconSize(QSize(18, 18));
++       setIconSize(p.size());
+        setAutoRaise(true);
+        setMouseTracking(true);
+        setToolTip(emoticon_string);
+@@ -391,7 +391,6 @@ void EmoticonSelectorButton::enterEvent(
+        if (Movie == NULL)
+        {
+                Movie = new QMovie(AnimPath);
+-               Movie->setScaledSize(QSize(18,18));
+                Movie->start();
+                connect(Movie, SIGNAL(updated(const QRect &)), this, SLOT(movieUpdate()));
+        }
