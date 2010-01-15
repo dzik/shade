@@ -5,6 +5,7 @@ app-office
 app-paludis
 app-portage
 eclass
+games-strategy
 kde-misc
 media-libs
 media-sound

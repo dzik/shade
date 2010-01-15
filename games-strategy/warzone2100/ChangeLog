@@ -1,0 +1,17 @@
+# ChangeLog for games-strategy/warzone2100
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-strategy/warzone2100/ChangeLog,v 1.38 2009/12/29 14:03:54 maekke Exp $
+
+
+
+*warzone2100-2.3_beta7 (15 Jan 2010)
+
+  15 Jan 2010; shade <shade.poczta@gmail.com>
+  warzone2100-2.3_beta7.ebuild:
+  sequences  changed to 2.2 (no package for 2.3, so using old one)
+
+  15 Jan 2010; shade <shade.poczta@gmail.com>
+  +warzone2100-2.3_beta7.ebuild:
+  version bump
+
+
