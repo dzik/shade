@@ -38,6 +38,11 @@ DEPEND="${RDEPEND}
 RDEPEND="${RDEPEND}
 	media-fonts/dejavu"
 
+src_prepare() {
+        eautoreconf
+}
+
+
 src_configure() {
 	egamesconf \
 		--disable-dependency-tracking \
