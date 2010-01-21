@@ -3,7 +3,7 @@
 # $Header: /var/cvsroot/gentoo-x86/games-strategy/warzone2100/warzone2100-2.2.4.ebuild,v 1.4 2009/12/29 14:03:54 maekke Exp $
 
 EAPI=2
-inherit versionator games
+inherit versionator games autotools
 
 MY_PV=$(get_version_component_range -2)
 DESCRIPTION="3D real-time strategy game"
@@ -39,7 +39,7 @@ RDEPEND="${RDEPEND}
 	media-fonts/dejavu"
 
 src_prepare() {
-        ./autogen.sh || die "autogen.sh failed"
+        eautoreconf
 }
 
 
