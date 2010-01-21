@@ -39,7 +39,7 @@ RDEPEND="${RDEPEND}
 	media-fonts/dejavu"
 
 src_prepare() {
-        eautoreconf
+        ./autogen.sh || die "autogen.sh failed"
 }
 
 
