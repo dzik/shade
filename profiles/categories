@@ -5,6 +5,7 @@ app-office
 app-paludis
 app-portage
 games-strategy
+kde-base
 kde-misc
 media-libs
 media-sound
@@ -17,3 +18,4 @@ sys-devel
 sys-fs
 sys-kernel
 x11-drivers
+x11-misc
