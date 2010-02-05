@@ -94,10 +94,6 @@ RDEPEND="${COMMONDEPEND}
 		>=x11-misc/xdg-utils-1.0.2-r3
 	)
 "
-PATCHES=(
-        "${FILESDIR}/kdelibs-4.3.5-keys.patch"
-)
-
 
 # Blockers added due to packages from old versions, removed in the meanwhile
 # as well as for file collisions
@@ -121,6 +117,7 @@ PATCHES=(
 	"${FILESDIR}/${PN}-4.3.3-klauncher_kdeinit.patch"
 	"${FILESDIR}/${PN}-4.3.3-klauncher_kioslave.patch"
 	"${FILESDIR}/${PN}-4.3.3-klauncher_mac.patch"
+        "${FILESDIR}/kdelibs-4.3.5-keys.patch"
 )
 
 src_prepare() {
