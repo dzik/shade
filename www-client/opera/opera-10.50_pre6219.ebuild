@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86 ~x86-fbsd"
 
 RESTRICT="mirror test strip"
 
-#QA_DT_HASH="${OPREFIX}/${PN}/.*"
+QA_DT_HASH="${OPREFIX}/${PN}/.*"
 #QA_PRESTRIPPED="${OPREFIX}/${PN}/.*"
 
 IUSE="elibc_FreeBSD"
@@ -35,9 +35,9 @@ O_U="http://snapshot.opera.com/unix/snapshot-${PV/*_pre}/"
 O_P="${P/_pre/-}"
 
 SRC_URI="
-	amd64? ( opera-10.50-6219.x86_64.linux.tar.bz2  )
-#	x86? ( ${O_U}${O_P}.i386.linux.tar.bz2 )
-#	x86-fbsd? ( ${O_U}${O_P}.i386.freebsd.tar.bz2 )
+	amd64? ( ${O_U}${O_P}.x86_64.linux.tar.bz2 )
+	x86? ( ${O_U}${O_P}.i386.linux.tar.bz2 )
+	x86-fbsd? ( ${O_U}${O_P}.i386.freebsd.tar.bz2 )
 "
 
 DEPEND=">=sys-apps/sed-4"
