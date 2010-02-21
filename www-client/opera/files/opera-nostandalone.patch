@@ -61,6 +61,7 @@ index 6c08e2d..f4cf0e6 100755
  done
  
 -# Setting environment relative to current working directory
++
 +# Setting environment relative to current working directory <-- no! we will not use current
  # Bundled Qt will be found here unless preloaded by the stance above
 -LD_LIBRARY_PATH="$PWD/usr/lib/opera${LD_LIBRARY_PATH:+:}$LD_LIBRARY_PATH"
