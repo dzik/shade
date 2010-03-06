@@ -11,7 +11,8 @@ DESCRIPTION="k3b internationalization package"
 HOMEPAGE="http://www.kde.org/"
 LICENSE="GPL-2"
 
-DEPEND=">=sys-devel/gettext-0.17"
+DEPEND=">=sys-devel/gettext-0.17
+	<app-cdr/k3b-1.90.0_rc1"
 RDEPEND=""
 
 SLOT="4"
