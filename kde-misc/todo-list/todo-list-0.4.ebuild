@@ -1,4 +1,4 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -19,10 +19,7 @@ SLOT="0"
 IUSE="debug"
 
 RDEPEND="
-	!kde-plasmoids/todo_plasmoid
 	>=kde-base/plasma-workspace-${KDE_MINIMAL}
 "
 
 S="${WORKDIR}/${MY_PN}"
-
-PATCHES=( "${FILESDIR}/${P}-patch_kde42.diff" )
