@@ -18,7 +18,6 @@ SLOT="0"
 IUSE="debug"
 
 RDEPEND="
-	!kde-plasmoids/customizable-weather
 	>=kde-base/plasma-workspace-${KDE_MINIMAL}
 "
 
