@@ -8,6 +8,7 @@ LICENSE="public-domain"
 SLOT="0"
 KEYWORDS="~x86"
 IUSE=""
+RESTRICT="mirror"
 
 RDEPEND="media-sound/lame
     sys-apps/findutils
