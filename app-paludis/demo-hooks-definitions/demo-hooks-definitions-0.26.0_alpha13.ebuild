@@ -4,7 +4,7 @@
 
 NEED_PALUDIS="0.26_alpha13"
 
-inherit eutils
+inherit eutils paludis-hooks
 
 DESCRIPTION="Definitions for eselect paludis-hook for Paludis's demo hooks."
 
