@@ -9,6 +9,8 @@ DESCRIPTION="Hook management wih eselect - for Paludis."
 #SRC_URI=""
 SRC_URI="mirror://paludis-extras/${P}.tar.bz2 mirror://niki/${P}.tar.bz2 mirror://zxy/${P}.tar.bz2"
 
+HOMEPAGE="http://paludis-extras.org/"
+
 LICENSE="GPL-2"
 
 SLOT="0"
