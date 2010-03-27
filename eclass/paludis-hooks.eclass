@@ -22,7 +22,7 @@ RESTRICT="primaryuri"
 
 HOMEPAGE="http://drzile.dyndns.org/pe-doc"
 
-SRC_URI="http://paludis-extras.org/distfiles/${P}.tar.bz2 mirror://prophet.ath.cx:8080/~shade/${P}.tar.bz2"
+SRC_URI="http://paludis-extras.org/distfiles/${P}.tar.bz2 mirror://prophet.ath.cx:8080/~shade/packages/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 

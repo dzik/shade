@@ -10,8 +10,6 @@ DESCRIPTION="Definitions for eselect paludis-hook for Paludis's demo hooks."
 
 LICENSE="GPL-2"
 
-SRC_URI="mirror://paludis-extras/${P}.tar.bz2 mirror://niki/${P}.tar.bz2 mirror://zxy/${P}.tar.bz2"
-
 SLOT="0"
 
 KEYWORDS="~amd64 ~x86 ~sparc ~hppa ~x86-fbsd"
