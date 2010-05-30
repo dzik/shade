@@ -1,4 +1,4 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -17,7 +17,10 @@ KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE="debug"
 
-RDEPEND="
+DEPEND="
+	x11-libs/qt-gui:4[accessibility]
+"
+RDEPEND="${DEPEND}
 	>=kde-base/plasma-workspace-${KDE_MINIMAL}
 "
 
