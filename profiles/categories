@@ -4,6 +4,7 @@ app-misc
 app-office
 app-paludis
 app-portage
+dev-embedded
 dev-util
 games-strategy
 kde-base
@@ -19,5 +20,6 @@ sci-electronics
 sys-devel
 sys-fs
 sys-kernel
+www-clients
 x11-drivers
 x11-misc
