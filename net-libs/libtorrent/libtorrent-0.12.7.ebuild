@@ -21,6 +21,7 @@ DEPEND="${RDEPEND}
 
 src_prepare() {
 	epatch "${FILESDIR}"/${P}-gcc44.patch
+	epatch "${FILESDIR}"/${P}-pt.patch
 	elibtoolize
 }
 

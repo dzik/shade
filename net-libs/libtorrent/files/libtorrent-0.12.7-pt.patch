@@ -1,0 +1,25 @@
+*** libtorrent-0.12.7/configure	2010-10-05 03:34:36.000000000 +0200
+--- libtorrent-0.12.7/configure.b	2011-03-22 09:47:05.764627998 +0100
+***************
+*** 2547,2556 ****
+  
+  
+  
+! $as_echo "#define PEER_NAME \"-lt0C70-\"" >>confdefs.h
+  
+  
+! $as_echo "#define PEER_VERSION \"lt\\x0C\\x70\"" >>confdefs.h
+  
+  
+  LIBTORRENT_CURRENT=13
+--- 2547,2556 ----
+  
+  
+  
+! $as_echo "#define PEER_NAME \"-lt0C60-\"" >>confdefs.h
+  
+  
+! $as_echo "#define PEER_VERSION \"lt\\x0C\\x60\"" >>confdefs.h
+  
+  
+  LIBTORRENT_CURRENT=13
