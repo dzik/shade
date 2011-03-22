@@ -1,5 +1,5 @@
 *** libtorrent-0.12.7/configure	2010-10-05 03:34:36.000000000 +0200
---- libtorrent-0.12.7/configure.b	2011-03-22 09:47:05.764627998 +0100
+--- libtorrent-0.12.7/configure.b	2011-03-22 09:58:20.916627415 +0100
 ***************
 *** 2547,2556 ****
   
@@ -23,3 +23,20 @@
   
   
   LIBTORRENT_CURRENT=13
+***************
+*** 3031,3037 ****
+  
+  # Define the identity of the package.
+   PACKAGE='libtorrent'
+!  VERSION='0.12.7'
+  
+  
+  cat >>confdefs.h <<_ACEOF
+--- 3031,3037 ----
+  
+  # Define the identity of the package.
+   PACKAGE='libtorrent'
+!  VERSION='0.12.6'
+  
+  
+  cat >>confdefs.h <<_ACEOF
