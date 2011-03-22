@@ -27,7 +27,7 @@ DEPEND="${COMMON_DEPEND}
 
 src_prepare() {
 #	epatch "${FILESDIR}"/${P}-canvas-fix.patch
-	epatch "${FILESDIR}"/rtorrent-0.8.4-pt.patch
+	epatch "${FILESDIR}"/rtorrent-0.8.7-pt.patch
         epatch "${FILESDIR}"/${P}-ncurses.patch
 
 }

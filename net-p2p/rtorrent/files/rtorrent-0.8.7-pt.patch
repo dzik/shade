@@ -1,0 +1,19 @@
+*** rtorrent-0.8.7/configure	2010-10-05 03:40:20.000000000 +0200
+--- rtorrent-0.8.7/configure.b	2011-03-22 09:35:21.832628308 +0100
+***************
+*** 2826,2832 ****
+  
+  # Define the identity of the package.
+   PACKAGE='rtorrent'
+!  VERSION='0.8.7'
+  
+  
+  cat >>confdefs.h <<_ACEOF
+--- 2826,2832 ----
+  
+  # Define the identity of the package.
+   PACKAGE='rtorrent'
+!  VERSION='0.8.6'
+  
+  
+  cat >>confdefs.h <<_ACEOF
