@@ -26,7 +26,7 @@ DEPEND="${COMMON_DEPEND}
 	dev-util/pkgconfig"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-canvas-fix.patch
+#	epatch "${FILESDIR}"/${P}-canvas-fix.patch
 	epatch "${FILESDIR}"/rtorrent-0.8.4-pt.patch
         epatch "${FILESDIR}"/${P}-ncurses.patch
 
