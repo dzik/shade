@@ -23,5 +23,6 @@ src_install() {
 	newexe src/${PN%-svn} ${PN%-svn}
 	newicon icon/${PN%-svn}.xpm ${PN%-svn}.xpm
 	newmenu icon/${PN%-svn}.desktop ${PN%-svn}.desktop
+ 	make_desktop_entry ${PN%-svn} "GtkEveMon" ${PN%-svn} "Application;Network;GTK"
 }
 
