@@ -21,8 +21,7 @@ RDEPEND="${DEPEND}"
 src_install() {
 	exeinto /usr/bin
 	newexe src/${PN%-svn} ${PN%-svn}
-	newicon icon/${PN%-svn}.xpm ${PN%-svn}.xpm
-	newmenu icon/${PN%-svn}.desktop ${PN%-svn}.desktop
- 	make_desktop_entry ${PN%-svn} "GtkEveMon" ${PN%-svn} "Application;Network;GTK"
+        newicon icon/${PN%-svn}.png ${PN%-svn}.png
+        newmenu icon/${PN%-svn}.desktop ${PN%-svn}.desktop
 }
 
