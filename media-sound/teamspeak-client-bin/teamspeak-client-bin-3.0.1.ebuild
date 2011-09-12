@@ -25,8 +25,8 @@ RESTRICT="strip"
 PROPERTIES="interactive"
 
 SRC_URI="
-	amd64? ( http://ftp.4players.de/pub/hosted/ts3/releases/beta-${PV/3.0.0_beta/}/TeamSpeak3-Client-linux_amd64-${PV/_/-}.run )
-	x86? ( http://ftp.4players.de/pub/hosted/ts3/releases/beta-${PV/3.0.0_beta/}/TeamSpeak3-Client-linux_x86-${PV/_/-}.run )
+	amd64? ( http://teamspeak.gameserver.gamed.de/ts3/releases/${PV}/TeamSpeak3-Client-linux_amd64-${PV}.run )
+	x86? ( http://teamspeak.gameserver.gamed.de/ts3/releases/${PV}/TeamSpeak3-Client-linux_x86-${PV}.run )
 "
 
 DEPEND=""
