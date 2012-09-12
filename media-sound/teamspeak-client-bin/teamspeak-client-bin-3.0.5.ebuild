@@ -31,7 +31,7 @@ SRC_URI="
 
 DEPEND=""
 RDEPEND="${DEPEND}
-		=media-libs/libpng-1.4*
+		media-libs/libpng
 		x11-libs/qt-gui:4
 		>=x11-libs/libXinerama-1.0.2"
 
