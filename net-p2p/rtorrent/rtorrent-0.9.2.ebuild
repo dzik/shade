@@ -31,7 +31,7 @@ DOCS=( doc/rtorrent.rc )
 src_prepare() {
 	# bug #358271
 	epatch "${FILESDIR}"/${PN}-0.9.1-ncurses.patch
-	epatch "#{FILESDIR}"/${P}-canvas-fix.patch
+	epatch "${FILESDIR}"/${P}-canvas-fix.patch
 }
 
 src_configure() {
