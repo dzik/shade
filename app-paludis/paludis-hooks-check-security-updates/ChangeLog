@@ -1,9 +1,0 @@
-# ChangeLog for app-paludis/paludis-hooks-check-security-updates
-# Distributed under the GPL v2
-# $Header: $
-
-2008-04-15 ver 1.3-r1 : always return 0
-2008-02-20 modified and changed to .hook by creidiki 
-2007-06-29 ebuild cleanup
-2007-03-12 ver 1.1 : updated for eselect support. Hook is now symlinked from /common/ folder. 
-2007-02-23 ver 1.0 : Initial entry
